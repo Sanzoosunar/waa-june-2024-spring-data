@@ -3,7 +3,7 @@ package com.example.spring.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Entity
+//@Entity
 @Setter
 @Getter
 public class Address {

@@ -11,10 +11,10 @@ import java.util.List;
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long cid;
 
     private String name;
 
-    @OneToMany(mappedBy = "category")
-    private List<Product> products = new ArrayList<>();
+    @OneToMany(mappedBy = "prcategory")
+    private List<Product> aproduct = new ArrayList<>();
 }

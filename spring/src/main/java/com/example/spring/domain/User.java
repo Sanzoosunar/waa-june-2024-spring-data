@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import java.util.*;
 
-@Entity
+//@Entity
 @Setter
 @Getter
 public class User {

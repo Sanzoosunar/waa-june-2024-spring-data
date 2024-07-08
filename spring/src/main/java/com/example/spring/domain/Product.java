@@ -11,7 +11,7 @@ import java.util.*;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long pid;
 
     private String name;
     private Double price;
@@ -19,8 +19,8 @@ public class Product {
 
     @ManyToOne
     @JoinColumn(name = "category_id")
-    private Category category;
+    private Category prcategory;
 
-    @OneToMany(mappedBy = "product", cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
-    private List<Review> reviews = new ArrayList<>();
+//    @OneToMany(mappedBy = "product", cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+//    private List<Review> reviews = new ArrayList<>();
 }
